@@ -1,0 +1,5 @@
+server:
+  $ yum install iperf
+  $ iperf -s -i 1 -f M   # -s表示服务端 -i 表示打印间隔 -f格式化显示结果
+clien:
+  $ iperf -c serverAddr -i 1 -t 30 -f M # -t表示执行时间 serverAddr是服务器地址
